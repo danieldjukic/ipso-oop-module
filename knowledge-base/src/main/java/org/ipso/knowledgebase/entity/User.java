@@ -2,15 +2,15 @@ package org.ipso.knowledgebase.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.ipso.knowledgebase.enums.Role;
 
 @Entity
 @Getter
 @Setter
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @Id
