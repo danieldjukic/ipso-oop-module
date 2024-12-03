@@ -33,7 +33,6 @@ public class JwtProvider {
                 .compact();
     }
 
-    //TODO update deprecated
     public String getUserIdFromJWT(String token) {
         Claims claims = Jwts.parser()
                 .setSigningKey(signingKey)
